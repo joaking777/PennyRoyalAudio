@@ -1577,6 +1577,116 @@ em { font-style: italic; color: var(--crema-claro); }
   color: var(--gris-claro);
 }
 
+/* ─── ARMÁ TU PEDAL ─── */
+.build-pedal { background: var(--negro); }
+
+.pedal-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.5rem;
+  background: var(--negro-suave);
+  border: 1px solid var(--gris-oscuro);
+  border-radius: var(--radius-lg);
+  padding: 2.2rem;
+  position: relative;
+  overflow: hidden;
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.pedal-banner::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 4px;
+  height: 100%;
+  background: var(--rojo);
+}
+
+.pedal-banner:hover {
+  border-color: var(--gris-medio);
+  box-shadow: 0 0 30px rgba(222,159,118,0.15);
+}
+
+.pedal-text {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.pedal-icon {
+  font-size: 2.6rem;
+  color: var(--rojo);
+  flex-shrink: 0;
+  margin-top: 0.3rem;
+}
+
+.pedal-text h3 {
+  font-size: 1.3rem;
+  color: var(--crema-claro);
+  margin-bottom: 0.5rem;
+}
+
+.pedal-text > div > p {
+  font-size: 0.9rem;
+  color: var(--gris-claro);
+  max-width: 480px;
+  margin-bottom: 1rem;
+}
+
+.pedal-highlights {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--crema-oscuro);
+}
+
+.pedal-highlights li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.pedal-highlights li i { color: var(--verde-musgo); }
+
+.btn-pedal {
+  background: var(--rojo);
+  color: var(--crema-claro);
+  border-color: var(--rojo);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.btn-pedal:hover {
+  background: var(--rojo-claro);
+  border-color: var(--rojo-claro);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(222,159,118,0.4);
+}
+
+.pedal-note {
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--gris-claro);
+  margin-top: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .pedal-banner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .btn-pedal { width: 100%; justify-content: center; }
+}
+
 /* ─── FAQ ─── */
 .faq { background: var(--negro-suave); }
 
