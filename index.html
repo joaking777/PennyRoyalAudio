@@ -63,6 +63,15 @@
 
   <!-- Favicon — logo del proyecto -->
    <link rel="icon" type="image/png" href="IMAGENES/favicon.png" />
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('pra-theme');
+        if (!t) t = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
+  </script>
  <link rel="stylesheet" href="style.css" />
 
   <!--
@@ -109,6 +118,11 @@
           <a href="https://github.com/joaking777/PennyRoyalStudio" target="_blank" rel="noopener" class="nav-github">
             <i class="fab fa-github"></i> GitHub
           </a>
+        </li>
+        <li>
+          <button class="theme-toggle" id="themeToggle" aria-label="Cambiar a modo claro" title="Cambiar tema">
+            <i class="fas fa-music" aria-hidden="true"></i>
+          </button>
         </li>
       </ul>
     </div>
@@ -684,11 +698,16 @@
             </ul>
           </div>
         </div>
-        <a href="https://barbarach.com/articles/building-a-simple-pedal/lets-build-a-simple-pedal/" target="_blank" rel="noopener" class="btn btn-pedal">
+               <a href="https://barbarach.com/articles/building-a-simple-pedal/lets-build-a-simple-pedal/" target="_blank" rel="noopener" class="btn btn-pedal">
           <i class="fas fa-screwdriver-wrench" aria-hidden="true"></i> Armar mi pedal
         </a>
       </div>
-      
+
+      <p class="pedal-note">
+        <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+        Guía externa de <strong>Barbara C.</strong> — se abre en una pestaña nueva.
+      </p>
+    </div>
   </section>
 
   <!-- ══════════════ FAQ ══════════════ -->
