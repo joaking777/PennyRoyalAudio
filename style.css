@@ -1968,3 +1968,106 @@ em { font-style: italic; color: var(--crema-claro); }
   .btn { padding: 0.65rem 1.2rem; font-size: 0.75rem; }
   .hero-glow-1, .hero-glow-2 { width: 260px; height: 260px; }
 }
+/* ═══════════ BOTÓN DE TEMA (nota musical) ═══════════ */
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid var(--gris-medio);
+  background: var(--gris-oscuro);
+  color: var(--crema-oscuro);
+  font-size: 0.85rem;
+  transition: all var(--transition);
+}
+
+.theme-toggle:hover {
+  border-color: var(--rojo);
+  color: var(--rojo);
+  transform: scale(1.08);
+}
+
+.theme-toggle i {
+  transition: transform 0.45s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* La nota "salta y gira" al cambiar de tema */
+.theme-toggle.flip i {
+  transform: rotate(360deg) translateY(-3px) scale(1.25);
+}
+
+/* En modo claro la nota se ve rellena con el acento */
+:root[data-theme="light"] .theme-toggle {
+  background: rgba(181, 98, 58, 0.12);
+  color: var(--rojo);
+  border-color: var(--rojo);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .theme-toggle i { transition: none; }
+}
+
+/* ═══════════ TEMA CLARO ═══════════ */
+:root[data-theme="light"] {
+  --negro:       #F7F1E6;
+  --negro-suave: #EFE6D7;
+  --gris-oscuro: #DCC8B2;
+  --gris-medio:  #C2A98E;
+  --gris-claro:  #6E5948;
+  --crema:       #2E2318;
+  --crema-claro: #140F0A;
+  --crema-oscuro:#5E4A38;
+  --verde-musgo: #8C5240;
+  --verde-claro: #75422F;
+  --rojo:        #B5623A;
+  --rojo-claro:  #9A4F2C;
+  --ocre:        #96763F;
+
+  --shadow:      0 4px 24px rgba(92, 62, 40, 0.18);
+  --shadow-card: 0 2px 16px rgba(92, 62, 40, 0.14);
+}
+
+/* Texto sobre superficies de acento (ahí siempre va claro) */
+:root[data-theme="light"] .btn-primary,
+:root[data-theme="light"] .btn-download,
+:root[data-theme="light"] .btn-pedal,
+:root[data-theme="light"] .btn-github,
+:root[data-theme="light"] .daw-tab.active,
+:root[data-theme="light"] .strip-inner p,
+:root[data-theme="light"] .roadmap-item.done .roadmap-marker,
+:root[data-theme="light"] .roadmap-item.active .roadmap-marker,
+:root[data-theme="light"] .skip-link {
+  color: #FFF7EC;
+}
+
+/* Fondos que estaban hardcodeados en negro */
+:root[data-theme="light"] .navbar.scrolled { background: rgba(247, 241, 230, 0.92); }
+:root[data-theme="light"] .lightbox        { background: rgba(247, 241, 230, 0.94); }
+
+@media (max-width: 768px) {
+  :root[data-theme="light"] .nav-links { background: rgba(247, 241, 230, 0.97); }
+}
+
+/* El mockup del DAW se queda oscuro: es "la app", no la página */
+:root[data-theme="light"] .daw-mockup {
+  background: #1A1A1A;
+  border-color: #3D3D3D;
+}
+:root[data-theme="light"] .daw-titlebar    { background: #2A2A2A; }
+:root[data-theme="light"] .daw-titlename,
+:root[data-theme="light"] .track-label,
+:root[data-theme="light"] .daw-tab,
+:root[data-theme="light"] .strip-label,
+:root[data-theme="light"] .transport-btn   { color: #CFAE9C; }
+:root[data-theme="light"] .transport-btn   { background: #3D3D3D; }
+:root[data-theme="light"] .daw-ruler,
+:root[data-theme="light"] .strip-db        { color: #8A7565; }
+:root[data-theme="light"] .transport-time  { color: #C68564; }
+
+/* Ajustes finos de contraste */
+:root[data-theme="light"] .video-placeholder { background: var(--negro-suave); }
+:root[data-theme="light"] .video-placeholder:hover { background-color: #E5D8C4; }
+:root[data-theme="light"] .github-banner { background: var(--negro-suave); }
+:root[data-theme="light"] .title-line.accent { -webkit-text-stroke-color: var(--rojo); }
