@@ -876,3 +876,35 @@ console.log(
   'color: #8B1A1A; font-size: 14px; font-weight: bold; font-family: monospace;',
   'color: #6B6B6B; font-size: 11px; font-family: monospace;'
 );
+
+/* ─────────────────────────────────────
+   20. TOGGLE DE TEMA (claro / oscuro)
+   · Icono de nota musical en vez de sol/luna
+   · Guarda la preferencia en localStorage
+───────────────────────────────────── */
+(function initThemeToggle() {
+  const btn  = document.getElementById('themeToggle');
+  const root = document.documentElement;
+  if (!btn) return;
+
+  function syncLabel() {
+    const isLight = root.getAttribute('data-theme') === 'light';
+    btn.setAttribute('aria-label', isLight ? 'Cambiar a modo oscuro' : 'Cambiar a modo claro');
+    btn.setAttribute('title', isLight ? 'Modo oscuro' : 'Modo claro');
+  }
+
+  syncLabel();
+
+  btn.addEventListener('click', () => {
+    const next = root.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+    root.setAttribute('data-theme', next);
+
+    try { localStorage.setItem('pra-theme', next); } catch (e) {}
+
+    // Animación de la nota
+    btn.classList.add('flip');
+    setTimeout(() => btn.classList.remove('flip'), 450);
+
+    syncLabel();
+  });
+})();
