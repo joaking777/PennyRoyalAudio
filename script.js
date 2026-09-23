@@ -269,7 +269,7 @@
   var shots = [
     { src: 'IMAGENES/Vista principal.jpg',             alt: 'Vista principal del programa',  title: 'Vista principal', desc: 'Así se ve Penny Royal Audio al abrirlo: todo lo que necesitás, a un clic de distancia.' },
     { src: 'IMAGENES/timeline.jpg',                    alt: 'Timeline y editor de pistas',   title: 'Timeline',   desc: 'Organizá, cortá y editá tus pistas desde una línea de tiempo intuitiva.' },
-    { src: 'IMAGENES/Plugins vst.jpg',                 alt: 'Plugins VST / LV2',             title: 'Plugins',    desc: 'Cargá tu cadena de efectos favorita en cada canal.' },
+    { src: 'IMAGENES/Plugins VST.jpg',                 alt: 'Plugins VST / LV2',             title: 'Plugins',    desc: 'Cargá tu cadena de efectos favorita en cada canal.' },
     { src: 'IMAGENES/consola de mezcla integrada.jpg', alt: 'Consola de mezcla integrada',   title: 'Mixer',      desc: 'EQ, compresión y sends por canal, con medidores en tiempo real.' }
   ];
   var shotTabs = document.querySelectorAll('.showcase-tab');
