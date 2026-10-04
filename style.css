@@ -160,6 +160,15 @@ button { font-family: inherit; cursor: pointer; }
 }
 .btn-download:hover { background: var(--accent-2); color: #161210; }
 
+.btn-download-secondary {
+  background: transparent;
+  color: var(--text);
+  border: 2px solid var(--border);
+  box-shadow: none;
+  margin-top: .6rem;
+}
+.btn-download-secondary:hover { background: var(--surface-2); color: var(--text); }
+
 .btn-github {
   background: var(--surface-2);
   color: var(--text);
