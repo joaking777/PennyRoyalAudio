@@ -64,7 +64,7 @@
       } catch (e) {}
     })();
   </script>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="estilo.css" />
 <base target="_blank">
 </head>
 <body>
@@ -88,7 +88,7 @@
         <li><a href="#download">Descargar</a></li>
         <li><a href="#faq">FAQ</a></li>
         <li>
-          <a href="https://github.com/joaking777/PennyRoyalStudio" target="_blank" rel="noopener" class="nav-github">
+          <a href="https://github.com/lukkaisito/PennyroyalAudio" target="_blank" rel="noopener" class="nav-github">
             <i class="fab fa-github"></i> GitHub
           </a>
         </li>
@@ -386,20 +386,20 @@
       <!-- Showcase con tabs -->
       <div class="showcase" id="showcase">
         <div class="showcase-tabs" role="tablist" aria-label="Vistas del DAW">
-          <button class="showcase-tab active" data-shot="0" role="tab" aria-selected="true">Vista principal</button>
-          <button class="showcase-tab" data-shot="1" role="tab" aria-selected="false">Timeline</button>
-          <button class="showcase-tab" data-shot="2" role="tab" aria-selected="false">Plugins</button>
-          <button class="showcase-tab" data-shot="3" role="tab" aria-selected="false">Mixer</button>
+          <button class="showcase-tab active" data-shot="0" role="tab" aria-selected="true">Arrange</button>
+          <button class="showcase-tab" data-shot="1" role="tab" aria-selected="false">Mixer</button>
+          <button class="showcase-tab" data-shot="2" role="tab" aria-selected="false">Pantalla de inicio</button>
+          <button class="showcase-tab" data-shot="3" role="tab" aria-selected="false">Temas</button>
         </div>
 
-        <figure class="showcase-stage" id="showcaseStage" role="button" tabindex="0" aria-label="Ampliar captura de Vista principal">
-          <img src="IMAGENES/Vista principal.jpg" alt="Vista principal del programa" id="showcaseImg" />
+        <figure class="showcase-stage" id="showcaseStage" role="button" tabindex="0" aria-label="Ampliar captura de Arrange">
+          <img src="IMAGENES/arrange.png" alt="Vista Arrange del programa, con pistas de guitarra, batería y voces" id="showcaseImg" />
           <span class="showcase-zoom" aria-hidden="true"><i class="fas fa-magnifying-glass-plus"></i></span>
         </figure>
 
         <div class="showcase-caption">
-          <h3 id="showcaseTitle">Vista principal</h3>
-          <p id="showcaseDesc">Así se ve Penny Royal Audio al abrirlo: todo lo que necesitás, a un clic de distancia.</p>
+          <h3 id="showcaseTitle">Arrange</h3>
+          <p id="showcaseDesc">La vista principal: organizá tus pistas de audio y MIDI en la línea de tiempo.</p>
         </div>
       </div>
 
@@ -553,8 +553,7 @@
             <li><i class="fas fa-check" aria-hidden="true"></i> Windows 10 / 11</li>
             <li><i class="fas fa-check" aria-hidden="true"></i> Open Source · Sin suscripción</li>
           </ul>
-          <!-- Reemplazá href con la URL real de descarga -->
-          <a href="#" class="btn btn-download" onclick="alert('⚠️ Reemplazá este link con la URL real de descarga para Windows'); return false;">
+          <a href="https://github.com/lukkaisito/PennyroyalAudio/releases/latest/download/PennyRoyalAudioSetup.exe" class="btn btn-download">
             <i class="fas fa-download" aria-hidden="true"></i> Descargar para Windows
           </a>
         </div>
@@ -571,8 +570,11 @@
             <li><i class="fas fa-check" aria-hidden="true"></i> Ubuntu 20.04+, Fedora</li>
             <li><i class="fas fa-check" aria-hidden="true"></i> Open Source · Sin suscripción</li>
           </ul>
-          <a href="#" class="btn btn-download" onclick="alert('⚠️ Reemplazá este link con la URL real de descarga para Linux'); return false;">
-            <i class="fas fa-download" aria-hidden="true"></i> Descargar para Linux
+          <a href="https://github.com/lukkaisito/PennyroyalAudio/releases/latest/download/PennyRoyalAudio-x86_64.AppImage" class="btn btn-download">
+            <i class="fas fa-download" aria-hidden="true"></i> Descargar .AppImage
+          </a>
+          <a href="https://github.com/lukkaisito/PennyroyalAudio/releases/latest/download/pennyroyal-audio_amd64.deb" class="btn btn-download btn-download-secondary">
+            <i class="fas fa-download" aria-hidden="true"></i> Descargar .deb (Ubuntu/Debian)
           </a>
         </div>
       </div>
@@ -585,13 +587,13 @@
             <h3>Código fuente en GitHub</h3>
             <p>Penny Royal Audio es software libre. Leé el código, reportá bugs, contribuí con tu propia magia.</p>
             <div class="github-badges">
-              <img src="https://img.shields.io/github/stars/joaking777/PennyRoyalAudio?style=flat-square&color=DE9F76&labelColor=1A1A1A" alt="Estrellas en GitHub" loading="lazy" />
-              <img src="https://img.shields.io/github/issues/joaking777/PennyRoyalAudio?style=flat-square&color=B37E6C&labelColor=1A1A1A" alt="Issues abiertos" loading="lazy" />
-              <img src="https://img.shields.io/github/license/joaking777/PennyRoyalAudio?style=flat-square&color=CDAC80&labelColor=1A1A1A" alt="Licencia GPL v3.0" loading="lazy" />
+              <img src="https://img.shields.io/github/stars/lukkaisito/PennyroyalAudio?style=flat-square&color=DE9F76&labelColor=1A1A1A" alt="Estrellas en GitHub" loading="lazy" />
+              <img src="https://img.shields.io/github/issues/lukkaisito/PennyroyalAudio?style=flat-square&color=B37E6C&labelColor=1A1A1A" alt="Issues abiertos" loading="lazy" />
+              <img src="https://img.shields.io/github/license/lukkaisito/PennyroyalAudio?style=flat-square&color=CDAC80&labelColor=1A1A1A" alt="Licencia GPL v3.0" loading="lazy" />
             </div>
           </div>
         </div>
-        <a href="https://github.com/joaking777/PennyRoyalAudio" target="_blank" rel="noopener" class="btn btn-github">
+        <a href="https://github.com/lukkaisito/PennyroyalAudio" target="_blank" rel="noopener" class="btn btn-github">
           <i class="fab fa-github" aria-hidden="true"></i> Ver en GitHub
         </a>
       </div>
@@ -747,7 +749,7 @@
           </button>
           <div class="faq-answer">
             <p>Sí. El código fuente está en GitHub bajo licencia <strong>GNU GPL v3.0</strong>. Podés leerlo, estudiarlo, modificarlo y contribuir con mejoras. La música no debería tener dueño.</p>
-            <a href="https://github.com/joaking777/PennyRoyalStudio" target="_blank" rel="noopener" class="faq-doc-link"><i class="fas fa-up-right-from-square"></i> Ver documentación</a>
+            <a href="https://github.com/lukkaisito/PennyroyalAudio" target="_blank" rel="noopener" class="faq-doc-link"><i class="fas fa-up-right-from-square"></i> Ver documentación</a>
           </div>
         </div>
 
@@ -825,7 +827,7 @@
           <h2>Hacemos esto<br>entre <em>todos</em></h2>
           <p>Penny Royal Audio es un proyecto comunitario. Cada línea de código, cada bug reportado y cada idea compartida hace al programa mejor para todos los músicos que lo usan.</p>
           <div class="community-links">
-            <a href="https://github.com/joaking777/PennyRoyalStudio-Community" target="_blank" rel="noopener" class="community-link">
+            <a href="https://github.com/lukkaisito/PennyroyalAudio" target="_blank" rel="noopener" class="community-link">
               <i class="fab fa-github" aria-hidden="true"></i> Contribuir en GitHub
             </a>
           </div>
@@ -875,10 +877,10 @@
         <div class="footer-links">
           <h4>Proyecto</h4>
           <ul>
-            <li><a href="https://github.com/joaking777/PennyRoyalStudio" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
-            <li><a href="https://github.com/joaking777/PennyRoyalStudio-Community/issues" target="_blank" rel="noopener"><i class="fas fa-bug" aria-hidden="true"></i> Reportar un bug</a></li>
-            <li><a href="https://github.com/joaking777/PennyRoyalStudio-Community/discussions" target="_blank" rel="noopener"><i class="fas fa-code-branch" aria-hidden="true"></i> Contribuir</a></li>
-            <li><a href="https://github.com/joaking777/PennyRoyalStudio-Community" target="_blank" rel="noopener"><i class="fas fa-flask" aria-hidden="true"></i> Penny Royal Lab</a></li>
+            <li><a href="https://github.com/lukkaisito/PennyroyalAudio" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
+            <li><a href="https://github.com/joaking777/PenyyRoyalAudio-Community/issues" target="_blank" rel="noopener"><i class="fas fa-bug" aria-hidden="true"></i> Reportar un bug</a></li>
+            <li><a href="https://github.com/joaking777/PenyyRoyalAudio-Community/discussions" target="_blank" rel="noopener"><i class="fas fa-code-branch" aria-hidden="true"></i> Contribuir</a></li>
+            <li><a href="https://barbarach.com/articles/building-a-simple-pedal/lets-build-a-simple-pedal/" target="_blank" rel="noopener"><i class="fas fa-flask" aria-hidden="true"></i> Penny Royal Lab</a></li>
             <li><a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank" rel="noopener"><i class="fas fa-file-alt" aria-hidden="true"></i> Licencia GPL</a></li>
           </ul>
         </div>
