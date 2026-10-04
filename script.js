@@ -267,10 +267,10 @@
 
   /* ── Showcase de capturas (tabs) ─────────────────────────── */
   var shots = [
-    { src: 'IMAGENES/Vista principal.jpg',             alt: 'Vista principal del programa',  title: 'Vista principal', desc: 'Así se ve Penny Royal Audio al abrirlo: todo lo que necesitás, a un clic de distancia.' },
-    { src: 'IMAGENES/timeline.jpg',                    alt: 'Timeline y editor de pistas',   title: 'Timeline',   desc: 'Organizá, cortá y editá tus pistas desde una línea de tiempo intuitiva.' },
-    { src: 'IMAGENES/Plugins VST.jpg',                 alt: 'Plugins VST / LV2',             title: 'Plugins',    desc: 'Cargá tu cadena de efectos favorita en cada canal.' },
-    { src: 'IMAGENES/consola de mezcla integrada.jpg', alt: 'Consola de mezcla integrada',   title: 'Mixer',      desc: 'EQ, compresión y sends por canal, con medidores en tiempo real.' }
+    { src: 'IMAGENES/arrange.png', alt: 'Vista Arrange con pistas de guitarra, batería y voces', title: 'Arrange',            desc: 'La vista principal: organizá tus pistas de audio y MIDI en la línea de tiempo.' },
+    { src: 'IMAGENES/mixer.png',   alt: 'Consola de mezcla con EQ, compresor, delay y reverb',    title: 'Mixer',               desc: 'EQ, compresión, delay y reverb por canal, con fader y medidores en tiempo real.' },
+    { src: 'IMAGENES/splash.png',  alt: 'Pantalla de inicio de Penny Royal Audio',                title: 'Pantalla de inicio',  desc: 'La pantalla de carga que ves cada vez que abrís el programa.' },
+    { src: 'IMAGENES/themes.png',  alt: 'Cuatro temas visuales del programa: In Utero, Cappuccino Frappe, Studio Grey y OLED Black', title: 'Temas', desc: 'Elegí el tema que más te guste: In Utero, Cappuccino Frappe, Studio Grey u OLED Black.' }
   ];
   var shotTabs = document.querySelectorAll('.showcase-tab');
   var stage = document.getElementById('showcaseStage');
